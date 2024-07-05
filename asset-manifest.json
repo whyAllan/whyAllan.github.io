@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5ccf3882.css",
+    "main.js": "/static/js/main.84ed2cc4.js",
+    "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
+    "static/media/Harvard_University_shield.svg": "/static/media/Harvard_University_shield.a46f506db5d70407bcd744514eb3e88b.svg",
+    "index.html": "/index.html",
+    "main.5ccf3882.css.map": "/static/css/main.5ccf3882.css.map",
+    "main.84ed2cc4.js.map": "/static/js/main.84ed2cc4.js.map",
+    "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ccf3882.css",
+    "static/js/main.84ed2cc4.js"
+  ]
+}
