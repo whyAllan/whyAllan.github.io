@@ -1,13 +1,5 @@
 function PopUp({ Project, setProjectToPup }: any) {
-  const {
-    name,
-    technologies,
-    descrition,
-    full_description,
-    url,
-    guithub,
-    Image,
-  } = Project;
+  const { name, technologies, full_description, url, guithub, Image } = Project;
 
   return (
     <div className="PopUp">
@@ -38,13 +30,23 @@ function PopUp({ Project, setProjectToPup }: any) {
 
             <div className="card-links">
               {url.length > 0 ? (
-                <a href={url} target="_blank" className="btn mr-2">
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn mr-2"
+                >
                   Visit Site
                 </a>
               ) : (
                 <small> No site</small>
               )}
-              <a href={guithub} target="_blank" className="btn">
+              <a
+                href={guithub}
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
                 Github
               </a>
             </div>

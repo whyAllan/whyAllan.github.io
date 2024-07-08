@@ -57,6 +57,7 @@ function Portfolio({ language }: any) {
                       <a
                         href={project.url}
                         target="_blank"
+                        rel="noreferrer"
                         className="btn mr-2"
                       >
                         Visit Site
@@ -64,7 +65,12 @@ function Portfolio({ language }: any) {
                     ) : (
                       <i> No site</i>
                     )}
-                    <a href={project.guithub} target="_blank" className="btn">
+                    <a
+                      href={project.guithub}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn"
+                    >
                       Github
                     </a>
                   </div>
