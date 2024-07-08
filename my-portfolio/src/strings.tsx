@@ -1,3 +1,6 @@
+import english4learnImage from "./images/english4learn.png";
+import ChitChatImage from "./images/ChitChat.png";
+import AuctionCommerceImage from "./images/Auction-commerce.png";
 const tecnologies = [
   {
     name: "python",
@@ -91,19 +94,146 @@ export function getHomeStrings(language: string) {
 export function getPortfolioStrings(language: string) {
   switch (language) {
     case "en":
-      return [
-        {
-          title: "Portfolio",
-        },
-      ];
+      return {
+        title: "Projects",
+
+        // Projects
+        projects: [
+          {
+            name: "english4learn",
+            Image: english4learnImage,
+            url: "https://english4learn.com",
+            guithub: "https://github.com/trepallan/english4learn",
+            technologies: [
+              "node",
+              "express",
+              "mongoDB",
+              "aws",
+              "react",
+              "javascript",
+              "typescript",
+            ],
+            descrition: "An interactive web application for learning English.",
+            full_description:
+              "english4learn.com is a website with various kinds of activities for English learning, I have built it with node on the backend, react on the frontend, and MongoDB as its database and its is hosted using AWS. The activities are from Sacramento County Office of Education (SCOE).",
+          },
+
+          {
+            name: "ChitChat",
+            Image: ChitChatImage,
+            url: "",
+            guithub: "https://github.com/trepallan/ChitChat",
+            technologies: [
+              "node",
+              "express",
+              "mongoDB",
+              "socket.io",
+              "react",
+              "javascript",
+              "typescript",
+            ],
+            descrition: "A realtime chat application for online friends.",
+            full_description:
+              "ChitChat is a real-time chat application. The goal here is to keep the backend constantly connected with the front so that whenever someone sends you a message you receive it instantly or vice versa. In order to do that this app uses the library socket.io which keeps a connection through the backend and the front which makes things lighter and faster than make a request to each message sended or received by you.",
+          },
+
+          {
+            name: "Auction Commerce",
+            Image: AuctionCommerceImage,
+            url: "",
+            guithub: "https://github.com/trepallan/Auction-Commerce",
+            technologies: [
+              "python",
+              "django",
+              "react",
+              "html",
+              "css",
+              "javascript",
+            ],
+            descrition:
+              "An e-commerce platform for selling and buying items in an auction style.",
+            full_description: "",
+          },
+        ],
+      };
+
     case "pt":
-      return [
-        {
-          title: "Portfólio",
-        },
-      ];
+      return {
+        title: "Projetos",
+
+        // Projects
+        projects: [
+          {
+            name: "english4learn",
+            Image: english4learnImage,
+            url: "https://english4learn.com",
+            guithub: "https://github.com/trepallan/english4learn",
+            technologies: [
+              "node",
+              "express",
+              "mongoDB",
+              "aws",
+              "react",
+              "javascript",
+              "typescript",
+            ],
+            descrition: "Uma aplicação web interativa para aprender inglês.",
+            full_description:
+              "english4learn.com é um site com diversos tipos de atividades para o aprendizado de inglês. Eu o desenvolvi com Node no backend, React no frontend, e MongoDB como banco de dados e o site é hospedado usando AWS. As atividades são do Sacramento County Office of Education (SCOE).",
+          },
+
+          {
+            name: "ChitChat",
+            Image: ChitChatImage,
+            url: "",
+            guithub: "https://github.com/trepallan/ChitChat",
+            technologies: [
+              "node",
+              "express",
+              "mongoDB",
+              "socket.io",
+              "react",
+              "javascript",
+              "typescript",
+            ],
+            descrition:
+              "Uma aplicação de bate-papo em tempo real para amigos online.",
+            full_description:
+              "ChitChat é um aplicativo de chat em tempo real. O objetivo aqui é manter o backend constantemente conectado com o frontend, para que sempre que alguém envie ou receba uma mensagem o processo seja instantaneo. Para isso, este aplicativo usa a biblioteca socket.io, que mantém uma conexão entre o backend e o frontend, tornando as coisas mais leves e rápidas do que fazer uma requisição para cada mensagem enviada ou recebida por você.",
+          },
+
+          {
+            name: "Auction Commerce",
+            Image: AuctionCommerceImage,
+            url: "",
+            guithub: "https://github.com/trepallan/Auction-commerce",
+            technologies: [
+              "python",
+              "django",
+              "react",
+              "html",
+              "css",
+              "javascript",
+            ],
+            descrition:
+              "Um e-commerce de leilão, onde o leilão acontece em tempo real.",
+            full_description: "",
+          },
+        ],
+      };
 
     default:
-      return [{}];
+      return {};
+  }
+}
+
+export function getNavbarStrings(language: string) {
+  switch (language) {
+    case "en":
+      return { projects: "Projects" };
+    case "pt":
+      return { projects: "Projetos" };
+    default:
+      return { projects: "Projects" };
   }
 }

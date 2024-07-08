@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import { getNavbarStrings } from "../strings";
 
 function Navbar({ language }) {
+  const { projects } = getNavbarStrings(language);
+
   let location = window.location.hash.split("/")[2];
   if (location === undefined) location = "";
   useEffect(() => {
@@ -35,7 +38,7 @@ function Navbar({ language }) {
         data-ref="projects"
         onClick={() => goTo("/projects")}
       >
-        Projects
+        {projects}
       </button>
       <button
         type="button"

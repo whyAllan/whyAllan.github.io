@@ -1,19 +1,79 @@
-import { useEffect, useState } from "react";
 import { getPortfolioStrings } from "../strings";
+import { useState } from "react";
+import PopUp from "./PortfolioPopup";
 
 function Portfolio({ language }: any) {
   // eslint-disable-next-line
-  const [projects, setProjects] = useState([{}]);
+  const { title, projects } = getPortfolioStrings(language);
+  const [ProjectToPup, setProjectToPup] = useState<any>(null);
 
-  useEffect(() => {
-    setProjects(getPortfolioStrings(language));
-  }, [language]);
+  if (!projects) return <div />;
+
+  function popUpShow(project: any) {
+    console.log(project);
+    setProjectToPup(project);
+  }
 
   return (
     <div className="App">
-      <h1>Projects</h1>
+      {ProjectToPup ? (
+        <PopUp
+          Project={ProjectToPup}
+          setProjectToPup={setProjectToPup}
+          key={ProjectToPup.name}
+        />
+      ) : null}
 
-      <div className="row row-cols-1 row-cols-md-3 g-4"></div>
+      <h1>{title}</h1>
+
+      <div className="projects">
+        <div className="container mx-auto mt-4">
+          <div className="row">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                title="see project"
+                className="col-md-4"
+                onClick={() => popUpShow(project)}
+              >
+                <div
+                  className="card"
+                  style={{ width: "22rem", height: "24rem" }}
+                >
+                  <img src={project.Image} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title">{project.name}</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">
+                      <div className="Cardtecnologies">
+                        {project.technologies.map((tecnology, index) => (
+                          <div key={index} className="CardTecnology">
+                            {tecnology}
+                          </div>
+                        ))}
+                      </div>
+                    </h6>
+                    <p className="card-text">{project.descrition}</p>
+                    {project.url.length > 0 ? (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        className="btn mr-2"
+                      >
+                        Visit Site
+                      </a>
+                    ) : (
+                      <i> No site</i>
+                    )}
+                    <a href={project.guithub} target="_blank" className="btn">
+                      Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
