@@ -249,7 +249,7 @@ body {
 
 .PopUpContainer {
   width: 80%;
-  height: 80%;
+  height: 80vh;
   background-color: rgb(55, 54, 54);
   border: none;
   border-radius: 5px;
@@ -259,7 +259,6 @@ body {
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  margin: 20px;
   cursor: default;
   overflow-y: auto;
   position: fixed;
@@ -308,14 +307,15 @@ body {
 
 .PopUpContainer .card {
   width: 80%;
+  position: absolute;
+  border: 2px solid rgb(12, 98, 164);
   background-color: rgb(55, 54, 54);
   color: rgb(255, 255, 255);
   border: none;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
-  margin: 20px;
+  margin-top: 80px;
   cursor: default;
 }
 
@@ -332,13 +332,15 @@ body {
 }
 
 .PopUpContainer .card .card-links a {
+  border: 2px solid rgb(12, 98, 164);
   text-decoration: none;
-  color: rgb(13, 79, 129);
+  color: rgb(12, 98, 164);
   font-size: 20px;
   margin-left: 80px;
 }
 
 .PopUpContainer .card .card-links a:hover {
+  border: 2px solid transparent;
   color: rgb(233, 108, 183);
 }
 

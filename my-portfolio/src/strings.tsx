@@ -1,6 +1,8 @@
 import english4learnImage from "./images/english4learn.png";
 import ChitChatImage from "./images/ChitChat.png";
 import AuctionCommerceImage from "./images/Auction-commerce.png";
+import TwitterLikeImage from "./images/Twitter-like.png";
+
 const tecnologies = [
   {
     name: "python",
@@ -63,8 +65,8 @@ const tecnologies = [
   },
 
   {
-    name: "bootstrap",
-    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    name: "npm",
+    url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
   },
 ];
 
@@ -113,11 +115,10 @@ export function getPortfolioStrings(language: string) {
               "javascript",
               "typescript",
             ],
-            descrition: "An interactive web application for learning English.",
+            descrition: "An interactive web application for English learning.",
             full_description:
               "english4learn.com is a website with various kinds of activities for English learning, I have built it with node on the backend, react on the frontend, and MongoDB as its database and its is hosted using AWS. The activities are from Sacramento County Office of Education (SCOE).",
           },
-
           {
             name: "ChitChat",
             Image: ChitChatImage,
@@ -136,6 +137,23 @@ export function getPortfolioStrings(language: string) {
             full_description:
               "ChitChat is a real-time chat application. The goal here is to keep the backend constantly connected with the front so that whenever someone sends you a message you receive it instantly or vice versa. In order to do that this app uses the library socket.io which keeps a connection through the backend and the front which makes things lighter and faster than make a request to each message sended or received by you.",
           },
+          {
+            name: "Twitter-like",
+            Image: TwitterLikeImage,
+            url: "",
+            guithub: "https://github.com/trepallan/Twitter-like",
+            technologies: [
+              "python",
+              "django",
+              "react",
+              "html",
+              "css",
+              "javascript",
+            ],
+            descrition: "A Twitter-like application for social media.",
+            full_description:
+              "An application inspired by twitter/x built with Django combined with Htmx and Javascript to make the site more responsive and user-friendly. It has most of the coolest X functionalities such as make, reply or like a post, follow or unfollow a user, it also has infinite scrolling.",
+          },
 
           {
             name: "Auction Commerce",
@@ -152,7 +170,8 @@ export function getPortfolioStrings(language: string) {
             ],
             descrition:
               "An e-commerce platform for selling and buying items in an auction style.",
-            full_description: "",
+            full_description:
+              "An e-commerce platform for selling and buying items in an auction style. It means every user should be able to start an auction, make a bid, or add or remove any product to their watchlist.",
           },
         ],
       };
@@ -203,6 +222,24 @@ export function getPortfolioStrings(language: string) {
           },
 
           {
+            name: "Twitter-like",
+            Image: TwitterLikeImage,
+            url: "",
+            guithub: "https://github.com/trepallan/Twitter-like",
+            technologies: [
+              "python",
+              "django",
+              "react",
+              "html",
+              "css",
+              "javascript",
+            ],
+            descrition: "Uma aplicação Twitter-like para rede social.",
+            full_description:
+              "Um aplicativo inspirado no Twitter/X, desenvolvido com Django combinado com Htmx e JavaScript para tornar o site mais responsivo e amigável. Ele possui a maioria das funcionalidades mais legais do X, como criar, responder ou curtir uma postagem, e seguir um perfil. Também conta com rolagem infinita.",
+          },
+
+          {
             name: "Auction Commerce",
             Image: AuctionCommerceImage,
             url: "",
@@ -217,7 +254,8 @@ export function getPortfolioStrings(language: string) {
             ],
             descrition:
               "Um e-commerce de leilão, onde o leilão acontece em tempo real.",
-            full_description: "",
+            full_description:
+              "Um e-commerce de leilão. Todos os usuários devem poder iniciar um leilão, fazer um lote, ou adicionar ou remover um item para sua lista de desejos.",
           },
         ],
       };
