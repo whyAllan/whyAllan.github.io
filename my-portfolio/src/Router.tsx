@@ -8,7 +8,16 @@ import PlanetIcon from "./icon/icons8-planet-66.png";
 
 function Router() {
   let { language } = useParams();
-  if (language === undefined) language = "en";
+
+  // Detect language
+  if (language === undefined) {
+    if (
+      navigator.language.toLowerCase() === "pt-br" ||
+      navigator.language.toLowerCase() === "pt"
+    ) {
+      language = "pt";
+    } else language = "en";
+  }
 
   function changeLanguage() {
     if (language === "pt") {
