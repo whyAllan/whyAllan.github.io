@@ -186,6 +186,7 @@ body {
   margin: 20px;
   box-shadow: rgb(3, 18, 52) 0px 5px 15px;
   cursor: default;
+  transition: 0.5s;
 }
 
 .projects .card:hover {
@@ -267,8 +268,8 @@ body {
 
 .PopUpContainer .close {
   position: fixed;
-  top: 90px;
-  right: 166px;
+  top: 11%;
+  right: 11%;
   width: 30px;
   height: 30px;
   cursor: pointer;
