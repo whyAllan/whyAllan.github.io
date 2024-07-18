@@ -73,6 +73,13 @@ function Portfolio({ language }: any) {
                     >
                       Github
                     </a>
+
+                    <small
+                      className="card-text"
+                      onClick={() => popUpShow(project)}
+                    >
+                      info
+                    </small>
                   </div>
                 </div>
               </div>
