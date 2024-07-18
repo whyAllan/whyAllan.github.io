@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9368a46f.css",
-    "main.js": "/static/js/main.5402799c.js",
+    "main.css": "/static/css/main.126e2469.css",
+    "main.js": "/static/js/main.057f375d.js",
     "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
     "static/media/Auction-commerce.png": "/static/media/Auction-commerce.0b959225646320024083.png",
     "static/media/Twitter-like.png": "/static/media/Twitter-like.88ee1c91524ab91e6942.png",
@@ -9,12 +9,12 @@
     "static/media/ChitChat.png": "/static/media/ChitChat.f265b67612ce84d45ec2.png",
     "static/media/Harvard_University_shield.svg": "/static/media/Harvard_University_shield.a46f506db5d70407bcd744514eb3e88b.svg",
     "index.html": "/index.html",
-    "main.9368a46f.css.map": "/static/css/main.9368a46f.css.map",
-    "main.5402799c.js.map": "/static/js/main.5402799c.js.map",
+    "main.126e2469.css.map": "/static/css/main.126e2469.css.map",
+    "main.057f375d.js.map": "/static/js/main.057f375d.js.map",
     "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9368a46f.css",
-    "static/js/main.5402799c.js"
+    "static/css/main.126e2469.css",
+    "static/js/main.057f375d.js"
   ]
 }
