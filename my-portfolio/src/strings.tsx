@@ -142,14 +142,7 @@ export function getPortfolioStrings(language: string) {
             Image: TwitterLikeImage,
             url: "",
             guithub: "https://github.com/trepallan/Twitter-like",
-            technologies: [
-              "python",
-              "django",
-              "react",
-              "html",
-              "css",
-              "javascript",
-            ],
+            technologies: ["python", "django", "html", "css", "javascript"],
             descrition: "A Twitter-like application for social media.",
             full_description:
               "An application inspired by twitter/x built with Django combined with Htmx and Javascript to make the site more responsive and user-friendly. It has most of the coolest X functionalities such as make, reply or like a post, follow or unfollow a user, it also has infinite scrolling.",
@@ -226,14 +219,7 @@ export function getPortfolioStrings(language: string) {
             Image: TwitterLikeImage,
             url: "",
             guithub: "https://github.com/trepallan/Twitter-like",
-            technologies: [
-              "python",
-              "django",
-              "react",
-              "html",
-              "css",
-              "javascript",
-            ],
+            technologies: ["python", "django", "html", "css", "javascript"],
             descrition: "Uma aplicação Twitter-like para rede social.",
             full_description:
               "Um aplicativo inspirado no Twitter/X, desenvolvido com Django combinado com Htmx e JavaScript para tornar o site mais responsivo e amigável. Ele possui a maioria das funcionalidades mais legais do X, como criar, responder ou curtir uma postagem, e seguir um perfil. Também conta com rolagem infinita.",
