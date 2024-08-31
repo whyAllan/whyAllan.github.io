@@ -50,6 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 3;
 }
 
 .change-language:hover {
@@ -90,6 +91,12 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
   margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .technologies {
+    width: auto;
+  }
 }
 
 .technologies .technology {
@@ -172,6 +179,12 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .projects {
+    width: auto;
+  }
 }
 
 .projects .card {

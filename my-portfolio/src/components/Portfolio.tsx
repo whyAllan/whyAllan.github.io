@@ -1,4 +1,4 @@
-import { getPortfolioStrings } from "../strings";
+import { getPortfolioStrings } from "../utils/strings";
 import { useState } from "react";
 import PopUp from "./PortfolioPopup";
 

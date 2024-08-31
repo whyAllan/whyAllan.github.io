@@ -1,8 +1,9 @@
 import HarvardShield from "../icon/Harvard_University_shield.svg";
-import { getHomeStrings } from "../strings";
+import { getHomeStrings } from "../utils/strings";
+import { goTo } from "../utils/goto";
 
 function Home({ language }) {
-  const { title, info, technologiesTitle, technologies, courses } =
+  const { title, info, technologiesTitle, projects, technologies, courses } =
     getHomeStrings(language);
 
   return (
@@ -26,6 +27,15 @@ function Home({ language }) {
             </div>
           ))}
         </div>
+
+        <p className="d-grid gap-2">
+          <button
+            className="btn btn-dark"
+            onClick={() => goTo("/projects", language)}
+          >
+            {projects}
+          </button>
+        </p>
 
         <div className="certification">
           <h3 id="courses">{courses}</h3>

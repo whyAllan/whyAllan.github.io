@@ -1,8 +1,8 @@
-import english4learnImage from "./images/english4learn.png";
-import ChitChatImage from "./images/ChitChat.png";
-import AuctionCommerceImage from "./images/Auction-commerce.png";
-import TwitterLikeImage from "./images/Twitter-like.png";
-import DvdRentalImage from "./images/dvd-rental.png";
+import english4learnImage from "../images/english4learn.png";
+import ChitChatImage from "../images/ChitChat.png";
+import AuctionCommerceImage from "../images/Auction-commerce.png";
+import TwitterLikeImage from "../images/Twitter-like.png";
+import DvdRentalImage from "../images/dvd-rental.png";
 
 // Technologies And icons
 const technologies = [
@@ -80,6 +80,7 @@ export function getHomeStrings(language: string) {
         title: "Full Stack Developer",
         info: "Full Stack Web Developer self-taught. I am always looking for new challenges and opportunities to grow as a developer, with a strong passion for taking an idea and turning it into a reality through coding. I have much love for learning in general not only in programming",
         technologiesTitle: "Main technologies",
+        projects: "See projects",
         technologies: technologies,
         courses: "Courses",
       };
@@ -89,6 +90,7 @@ export function getHomeStrings(language: string) {
         title: "Desenvolvedor Full Stack",
         info: "Desenvolvedor Full Stack. Estou sempre procurando por novos desafios e oportunidades para me aprimorar. Tenho muito amor pelo aprendizado geral, não apenas na programação",
         technologiesTitle: "Principais tecnologias",
+        projects: "Ver projetos",
         technologies: technologies,
         courses: "Cursos",
       };

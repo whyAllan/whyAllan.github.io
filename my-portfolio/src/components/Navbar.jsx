@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { getNavbarStrings } from "../strings";
+import { getNavbarStrings } from "../utils/strings";
+import { goTo } from "../utils/goto";
 
 function Navbar({ language }) {
   const { projects } = getNavbarStrings(language);
@@ -18,17 +19,13 @@ function Navbar({ language }) {
     });
   }, [location]);
 
-  function goTo(ref) {
-    window.location.href = "#/" + language + ref;
-  }
-
   return (
     <nav className="navbar btn-group me-2" role="group" aria-label="Navigation">
       <button
         type="button"
         className="btn btn-secondary"
         data-ref=""
-        onClick={() => goTo("/")}
+        onClick={() => goTo("/", language)}
       >
         Home
       </button>
@@ -36,7 +33,7 @@ function Navbar({ language }) {
         type="button"
         className="btn btn-secondary"
         data-ref="projects"
-        onClick={() => goTo("/projects")}
+        onClick={() => goTo("/projects", language)}
       >
         {projects}
       </button>
@@ -44,7 +41,7 @@ function Navbar({ language }) {
         type="button"
         className="btn btn-secondary"
         data-ref="social"
-        onClick={() => goTo("/social")}
+        onClick={() => goTo("/social", language)}
       >
         Social
       </button>
