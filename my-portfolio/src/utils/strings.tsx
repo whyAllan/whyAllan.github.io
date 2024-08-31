@@ -3,6 +3,7 @@ import ChitChatImage from "../images/ChitChat.png";
 import AuctionCommerceImage from "../images/Auction-commerce.png";
 import TwitterLikeImage from "../images/Twitter-like.png";
 import DvdRentalImage from "../images/dvd-rental.png";
+import PortfolioImage from "../images/portfolio.png";
 
 // Technologies And icons
 const technologies = [
@@ -187,6 +188,16 @@ export function getPortfolioStrings(language: string) {
             full_description:
               "An e-commerce platform for selling and buying items in an auction style. It means every user should be able to start an auction, make a bid, or add or remove any product to their watchlist.",
           },
+
+          {
+            name: "Portfolio",
+            Image: PortfolioImage,
+            url: "",
+            github: "https://github.com/whyallan/portfolio",
+            technologies: ["react", "html", "css", "javascript", "typescript"],
+            description: "My personal portfolio.",
+            full_description: "My personal portfolio.",
+          },
         ],
       };
 
@@ -282,6 +293,16 @@ export function getPortfolioStrings(language: string) {
               "Um e-commerce de leilão, onde o leilão acontece em tempo real.",
             full_description:
               "Um e-commerce de leilão. Todos os usuários devem poder iniciar um leilão, fazer um lote, ou adicionar ou remover um item para sua lista de desejos.",
+          },
+
+          {
+            name: "Portfolio",
+            Image: PortfolioImage,
+            url: "",
+            github: "https://github.com/whyallan/portfolio",
+            technologies: ["react", "html", "css", "javascript", "typescript"],
+            description: "Meu portfolio.",
+            full_description: "Meu portfolio.",
           },
         ],
       };
