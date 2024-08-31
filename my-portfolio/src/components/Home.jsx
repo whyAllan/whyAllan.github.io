@@ -2,7 +2,7 @@ import HarvardShield from "../icon/Harvard_University_shield.svg";
 import { getHomeStrings } from "../strings";
 
 function Home({ language }) {
-  const { title, info, tecnologiesTitle, tecnologies, courses } =
+  const { title, info, technologiesTitle, technologies, courses } =
     getHomeStrings(language);
 
   return (
@@ -16,13 +16,13 @@ function Home({ language }) {
 
         <p id="infoText">{info}</p>
 
-        <h3 id="tecnologies">{tecnologiesTitle}</h3>
+        <h3 id="technologies">{technologiesTitle}</h3>
 
-        <div className="tecnologies">
-          {tecnologies.map((tecnology) => (
-            <div className="tecnology" key={tecnology.name}>
-              <img src={tecnology.url} alt={tecnology.name} />
-              <p>{tecnology.name}</p>
+        <div className="technologies">
+          {technologies.map((technology) => (
+            <div className="technology" key={technology.name}>
+              <img src={technology.url} alt={technology.name} />
+              <p>{technology.name}</p>
             </div>
           ))}
         </div>

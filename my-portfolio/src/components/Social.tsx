@@ -1,4 +1,4 @@
-import guitHubIcon from "../icon/icons8-github-50.png";
+import gitHubIcon from "../icon/icons8-github-50.png";
 import linkedInIcon from "../icon/icons8-linkedin-48.png";
 import emailIcon from "../icon/icons8-email-26.png";
 import linkIcon from "../icon/icons8-link-24.png";
@@ -8,15 +8,12 @@ function Social() {
     <div className="App">
       <div className="social">
         <div className="social-item">
-          <img src={guitHubIcon} className="social-logo" alt="github" />{" "}
-          trepallan
+          <img src={gitHubIcon} className="social-logo" alt="github" /> whyAllan
           <img
             src={linkIcon}
             className="social-link"
             alt="go to site"
-            onClick={() =>
-              window.open("https://github.com/trepallan", "_blank")
-            }
+            onClick={() => window.open("https://github.com/whyallan", "_blank")}
           />
         </div>
 

@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.6;
+  opacity: 0.8;
   transition: opacity 0.5s;
 }
 
@@ -42,7 +42,7 @@ body {
   opacity: 1;
 }
 
-.chage-language {
+.change-language {
   position: fixed;
   top: 0;
   right: 20px;
@@ -52,11 +52,11 @@ body {
   cursor: pointer;
 }
 
-.chage-language:hover {
+.change-language:hover {
   text-decoration: underline;
 }
 
-.chage-language img {
+.change-language img {
   width: 26px;
 }
 
@@ -84,7 +84,7 @@ body {
   }
 }
 
-.tecnologies {
+.technologies {
   width: 60%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -92,13 +92,13 @@ body {
   margin: 20px;
 }
 
-.tecnologies .tecnology {
+.technologies .technology {
   display: "flex";
   flex-direction: "column";
   align-items: "center";
 }
 
-.tecnologies img {
+.technologies img {
   width: 40px;
   margin: 2px;
 }
@@ -199,7 +199,7 @@ body {
   z-index: 1;
 }
 
-.projects .card .Cardtecnologies {
+.projects .card .CardTechnologies {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -209,7 +209,7 @@ body {
   margin: 10px;
 }
 
-.projects .card .CardTecnology {
+.projects .card .CardTechnology {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -221,22 +221,15 @@ body {
 .projects .card a {
   text-decoration: none;
   color: rgb(95, 94, 97);
+  border: 2px solid rgb(14, 21, 25);
+  margin-left: 4px;
 }
 
 .projects .card a:hover {
   color: purple;
+  border: 2px solid purple;
 }
 
-.projects .card small {
-  cursor: pointer;
-  color: rgb(67, 46, 105);
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.projects .card small:hover {
-  color: rgb(255, 255, 255);
-}
 /* End Projects */
 
 /* PopUp */

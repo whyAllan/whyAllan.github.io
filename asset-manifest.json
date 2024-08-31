@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcbd9f7a.css",
-    "main.js": "/static/js/main.e9596dd5.js",
+    "main.css": "/static/css/main.db992f2f.css",
+    "main.js": "/static/js/main.692e7362.js",
     "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
     "static/media/Auction-commerce.png": "/static/media/Auction-commerce.0b959225646320024083.png",
+    "static/media/dvd-rental.png": "/static/media/dvd-rental.f507d56d24439019bd76.png",
     "static/media/Twitter-like.png": "/static/media/Twitter-like.88ee1c91524ab91e6942.png",
     "static/media/english4learn.png": "/static/media/english4learn.430cf6e9a7f370786cee.png",
     "static/media/ChitChat.png": "/static/media/ChitChat.f265b67612ce84d45ec2.png",
     "static/media/Harvard_University_shield.svg": "/static/media/Harvard_University_shield.a46f506db5d70407bcd744514eb3e88b.svg",
     "index.html": "/index.html",
-    "main.dcbd9f7a.css.map": "/static/css/main.dcbd9f7a.css.map",
-    "main.e9596dd5.js.map": "/static/js/main.e9596dd5.js.map",
+    "main.db992f2f.css.map": "/static/css/main.db992f2f.css.map",
+    "main.692e7362.js.map": "/static/js/main.692e7362.js.map",
     "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcbd9f7a.css",
-    "static/js/main.e9596dd5.js"
+    "static/css/main.db992f2f.css",
+    "static/js/main.692e7362.js"
   ]
 }

@@ -34,7 +34,7 @@ function Router() {
   return (
     <>
       <Navbar language={language} />
-      <div className="chage-language" onClick={changeLanguage}>
+      <div className="change-language" onClick={changeLanguage}>
         <img src={PlanetIcon} alt="change language icon" />
         <span>{language}</span>
       </div>

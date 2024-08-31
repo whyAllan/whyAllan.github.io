@@ -1,5 +1,5 @@
 function PopUp({ Project, setProjectToPup }: any) {
-  const { name, technologies, full_description, url, guithub, Image } = Project;
+  const { name, technologies, full_description, url, github, Image } = Project;
 
   return (
     <div className="PopUp">
@@ -14,20 +14,6 @@ function PopUp({ Project, setProjectToPup }: any) {
         <div className="card mb-3">
           <img src={Image} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h3 className="card-title">{name}</h3>
-
-            <p className="card-text">
-              <small
-                className="text-body-secondary"
-                data-bs
-                data-bs-theme="dark"
-              >
-                {technologies.join(", ")}
-              </small>
-            </p>
-
-            <p className="card-text">{full_description}</p>
-
             <div className="card-links">
               {url.length > 0 ? (
                 <a
@@ -41,15 +27,25 @@ function PopUp({ Project, setProjectToPup }: any) {
               ) : (
                 <small> No site</small>
               )}
-              <a
-                href={guithub}
-                target="_blank"
-                rel="noreferrer"
-                className="btn"
-              >
+              <a href={github} target="_blank" rel="noreferrer" className="btn">
                 Github
               </a>
             </div>
+
+            <hr />
+            <h3 className="card-title">{name}</h3>
+
+            <p className="card-text">
+              <small
+                className="text-body-secondary"
+                data-bs
+                data-bs-theme="dark"
+              >
+                {technologies.join(", ")}
+              </small>
+            </p>
+
+            <p className="card-text">{full_description}</p>
           </div>
         </div>
       </div>

@@ -44,15 +44,15 @@ function Portfolio({ language }: any) {
                   <div className="card-body">
                     <h5 className="card-title">{project.name}</h5>
                     <h6 className="card-subtitle mb-2 text-muted">
-                      <div className="Cardtecnologies">
-                        {project.technologies.map((tecnology, index) => (
-                          <div key={index} className="CardTecnology">
-                            {tecnology}
+                      <div className="CardTechnologies">
+                        {project.technologies.map((technology, index) => (
+                          <div key={index} className="CardTechnology">
+                            {technology}
                           </div>
                         ))}
                       </div>
                     </h6>
-                    <p className="card-text">{project.descrition}</p>
+                    <p className="card-text">{project.description}</p>
                     {project.url.length > 0 ? (
                       <a
                         href={project.url}
@@ -66,20 +66,13 @@ function Portfolio({ language }: any) {
                       <i> No site</i>
                     )}
                     <a
-                      href={project.guithub}
+                      href={project.github}
                       target="_blank"
                       rel="noreferrer"
                       className="btn"
                     >
                       Github
                     </a>
-
-                    <small
-                      className="card-text"
-                      onClick={() => popUpShow(project)}
-                    >
-                      info
-                    </small>
                   </div>
                 </div>
               </div>
