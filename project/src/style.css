@@ -19,7 +19,7 @@ html,
 .navbar {
   width: 400px;
   height: auto;
-  position: sticky;
+  position: sticky !important;
   z-index: 999;
   top: 0;
   left: 50%;
